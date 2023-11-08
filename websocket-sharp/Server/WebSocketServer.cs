@@ -56,8 +56,8 @@ namespace WebSocketSharp.Server
   /// </remarks>
   public class WebSocketServer
   {
-    #region Private Fields
-
+    #region Private Field
+      
     private System.Net.IPAddress               _address;
     private AuthenticationSchemes              _authSchemes;
     private static readonly string             _defaultRealm;
@@ -101,7 +101,6 @@ namespace WebSocketSharp.Server
     public WebSocketServer ()
     {
       var addr = System.Net.IPAddress.Any;
-
       init (addr.ToString (), addr, 80, false);
     }
 
